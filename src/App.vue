@@ -1,13 +1,25 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <div id="app" class="container">
+    <TodoInput/>
+    <TodoList/>
+    <TodoItem/>
     </div>
-    <router-view/>
+
   </div>
 </template>
+<script>
+import TodoInput from '@/components/Todoinput'
+import TodoList from '@/components/TodoList'; 
+import TodoItem from '@/components/TodoItem'
 
+export default {
+ name:'App',
+ components:{
+   TodoInput,TodoList,TodoItem
+ },
+
+}
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
