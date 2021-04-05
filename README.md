@@ -17,3 +17,7 @@ npm run build
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+## Explaination :
+- Create todo list using vuex ,you can add,Edit and delete todo. 
